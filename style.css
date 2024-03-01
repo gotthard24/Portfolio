@@ -1,0 +1,25 @@
+body{
+    height: 10000px;
+    background-image: url(https://i.pinimg.com/564x/07/6e/6e/076e6e99fff334a0e8ac8b97cec94a6b.jpg);
+    background-position: center;
+    /* background-size: cover; */
+}
+
+nav *{
+    color: wheat !important;
+}
+
+.col-10, .col-md-6{
+    box-shadow: 0px 0px 50px;
+}
+
+.hithere .ht_img{
+    padding: 0px !important;
+}
+/* 
+.avatar{
+    height: 200px;
+    width: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+} */
