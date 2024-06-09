@@ -23,7 +23,7 @@ const Projects = () => {
                             The game adapts to different levels of difficulty, 
                             making it suitable for learners at any stage. 
                         </p>
-                        <a href="http://ec2-3-76-7-231.eu-central-1.compute.amazonaws.com/login"><span className="subsub purple_p">See the project {'>'}</span></a>
+                        <a href="http://ec2-3-76-7-231.eu-central-1.compute.amazonaws.com/"><span className="subsub purple_p">See the project {'>'}</span></a>
                         <a href="https://github.com/gotthard24/Visual_Learn_FP"><span className="subsub purple_p">GitHub  {'>'}</span></a>
                     </div>
                     <div className="card">
