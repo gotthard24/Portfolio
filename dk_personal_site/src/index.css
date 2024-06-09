@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Unbounded:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Unbounded:wght@200..900&display=swap');
+
+*{
+  /* border: #ffffff solid 1px; */
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  padding: 0px;
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  background-color: #0F0E13;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.line::before {
+  content: '';
+  position: absolute;
+  left: 33%;
+  top: 0;
+  width: 1px; 
+  height: 200vh; 
+  background-color: #9F9FBA; 
+  transform: translateX(-50%); 
+  opacity: 15%;
+}
+
+.line::after {
+  content: '';
+  position: absolute;
+  left: 66%;
+  top: 0;
+  width: 1px; 
+  height: 200vh; 
+  background-color: #9F9FBA; 
+  transform: translateX(-50%); 
+  opacity: 15%;
+}
+
+.header_wrapper{
+  display: flex;
+  align-items: center;
+  height: 38vh;
+  padding-bottom: 50px;
+}
+
+.header_content{
+  margin-left: 4vw;
+  width: 90vw;
+  height: 40%;
+}
+
+.title{
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 300%;
+}
+
+.sub{
+  text-align: left;
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 200%;
+}
+
+section{
+  /* border: 1px solid #FB5700; */
+  display: flex;
+  margin-bottom: 75px;
+}
+
+.title_div{
+  margin-left: 4vw;
+  /* border: #9F9FBA 1px solid; */
+  width: 40vw;
+}
+
+.card_section{
+  display: flex;
+  gap: 5vw;
+  flex-wrap: wrap;
+  /* border: 1px solid #6949FF; */
+}
+
+.card{
+  font-size: 150%;
+  text-align: start;
+  line-height: 3vh;
+  margin-right: 10px;
+  margin-left: 2vw;
+  width: 25vw;
+  /* border: #06E072 1px solid; */
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+}
+
+#proj_icons{
+  display: flex;
+  gap: 1vw;
+}
+
+.sub_card{
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 100%;
+}
+
+#im{
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.subsub{
+  font-size: 70%;
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+}
+
+.standard_text{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  color: #9F9FBA;
+  font-size: 60%;
+  padding-right: 10px;
+}
+
+.purple_p{
+  color: #6949FF
+}
+
+.green_p{
+  color: #06E072
+}
+
+.orange_p{
+  color: #FB5700
+}
+
+#cv_button{
+  width: 10vw;
+  height: 3.5vh;
+  background-color: #6949FF;
+}
+
+.icon{
+  width: 5vw;
+}
+
+.skills_section{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 4vw;
+  row-gap: 1vw;
+  margin-left: 10vw;
+}
+
+.titlefoot{
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 180%;
+}
+
+iframe{
+  width: 100vw;
+  height: 100vh;
+}
+
+.prof_title{
+  font-size: 100%;
+}
+
+@media screen and (max-width: 850px) {
+  *{
+    text-align: start;
+  }
+  #proj_icons{
+    display: flex;
+    width: 10vw;
+    gap: 1vw;
+  }
+  .header_wrapper{
+    display: flex;
+    align-items: center;
+    height: 38vh;
+    padding-bottom: 50px;
+  }
+
+  #cv_button{
+    padding-left: 10px;
+    width: 20vw;
+    height: 3.5vh;
+    background-color: #6949FF;
+  }
+
+  section{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title_div{
+    text-align: start;
+  }
+
+  .card_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vw;
+    flex-wrap: wrap;
+    /* border: 1px solid #6949FF; */
+  }
+  .card{
+    font-size: 150%;
+    text-align: start;
+    line-height: 3vh;
+    margin-right: 10px;
+    margin-left: 2vw;
+    width: 90vw;
+    /* border: #06E072 1px solid; */
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+  }
+
+  img{
+    width: 16vw;
+  }
+
+  .titlefoot{
+    font-size: 100%;
+  }
+}
