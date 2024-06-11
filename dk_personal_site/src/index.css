@@ -27,10 +27,11 @@ body{
   left: 33%;
   top: 0;
   width: 1px; 
-  height: 200vh; 
+  height: 300vh; 
   background-color: #9F9FBA; 
   transform: translateX(-50%); 
   opacity: 15%;
+  z-index: -1;
 }
 
 .line::after {
@@ -39,17 +40,19 @@ body{
   left: 66%;
   top: 0;
   width: 1px; 
-  height: 200vh; 
+  height: 300vh; 
   background-color: #9F9FBA; 
   transform: translateX(-50%); 
   opacity: 15%;
+  z-index: -1;
 }
 
 .header_wrapper{
   display: flex;
   align-items: center;
-  height: 38vh;
+  height: 100vh;
   padding-bottom: 50px;
+  font-size: 150%;
 }
 
 .header_content{
@@ -149,21 +152,43 @@ section{
 }
 
 #cv_button{
-  width: 10vw;
-  height: 3.5vh;
-  background-color: #6949FF;
+  width: 8vw;
+  height: 4vh;
+  background: linear-gradient(135deg, #6949FF, #4735B2);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 0.7em;
+  font-weight: bold;
+  text-align: center;
+  line-height: 3.5vh;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
+#cv_button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#cv_button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
 .icon{
-  width: 5vw;
+  width: 5.5vw;
 }
 
 .skills_section{
   display: flex;
   flex-wrap: wrap;
-  column-gap: 4vw;
+  column-gap: 2vw;
   row-gap: 1vw;
   margin-left: 10vw;
+  /* border: #06E072 1px solid; */
+  margin-right: 5.8vw;
 }
 
 .titlefoot{
@@ -182,6 +207,12 @@ iframe{
   font-size: 100%;
 }
 
+.footer_wrapper{
+  font-size: 125%;
+  /* border: #06E072 1px solid; */
+  margin-bottom: 0px;
+}
+
 @media screen and (max-width: 850px) {
   *{
     text-align: start;
@@ -196,6 +227,7 @@ iframe{
     align-items: center;
     height: 38vh;
     padding-bottom: 50px;
+    font-size: 100%;
   }
 
   #cv_button{
@@ -203,6 +235,7 @@ iframe{
     width: 20vw;
     height: 3.5vh;
     background-color: #6949FF;
+    text-align: start;
   }
 
   section{
@@ -240,6 +273,14 @@ iframe{
   }
 
   .titlefoot{
+    font-size: 100%;
+  }
+
+  .icon{
+    width: 12vw;
+  }
+
+  .footer_wrapper{
     font-size: 100%;
   }
 }
